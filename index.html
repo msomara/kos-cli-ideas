@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Source-backed GitHub Copilot CLI ideas discussed in the October 5, 2026 Kos Team meeting."
+    >
+    <title>Kos Team Meeting | GitHub Copilot CLI Ideas</title>
+    <link rel="stylesheet" href="./kos-cli-ideas.css">
+    <script src="./kos-cli-ideas.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CLI Field Notes home">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span>
+        <span>CLI <strong>Field Notes</strong></span>
+      </a>
+      <nav aria-label="Page navigation">
+        <a href="#ideas">Ideas</a>
+        <a href="#loop">Learning loop</a>
+        <a href="#next">Next experiment</a>
+      </nav>
+      <a class="meeting-link" href="#source">Meeting source</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Kos Team meeting / October 5, 2026</p>
+          <h1>Cool ideas should become <em>team capability.</em></h1>
+          <p class="hero-lead">
+            The team discussed using GitHub Copilot CLI as both a discovery interface and a
+            contribution mechanism for shared AI practices. The goal: stop useful techniques
+            from disappearing after the meeting ends.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#ideas">Explore the ideas <span>down</span></a>
+            <button class="button quiet export-all" id="export-all" type="button">
+              Download all idea briefs
+            </button>
+          </div>
+          <div class="source-status">
+            <span class="verified">Verified discussion</span>
+            <span>6 reusable concepts captured</span>
+            <span>1 operating model inferred</span>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="Shared knowledge workflow preview">
+          <div class="terminal-bar">
+            <span><i></i><i></i><i></i></span>
+            <small>copilot / cxai-vibers-club</small>
+          </div>
+          <div class="terminal-body">
+            <p><b>$</b> Find techniques that could help my new project.</p>
+            <div class="scan-line"><span></span>Scanning "What's Worked"...</div>
+            <article>
+              <small>RECOMMENDED PATTERN</small>
+              <strong>Meeting-to-knowledge capture</strong>
+              <p>Turn a demonstrated workflow into a reusable, source-linked how-to.</p>
+              <div class="chips">
+                <span>GitHub CLI</span>
+                <span>Team memory</span>
+                <span>Reusable</span>
+              </div>
+            </article>
+            <p class="success">Done. Prior learning found before rebuilding from scratch.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="meeting-strip" aria-label="Meeting themes">
+        <div><strong>Capture</strong><span>Record useful techniques where they are discussed</span></div>
+        <div><strong>Organize</strong><span>Turn demonstrations into repeatable guidance</span></div>
+        <div><strong>Discover</strong><span>Let CLI search the team's accumulated learning</span></div>
+        <div><strong>Reuse</strong><span>Move code and practices into shared team spaces</span></div>
+      </section>
+
+      <section class="ideas-section" id="ideas">
+        <div class="section-heading">
+          <p class="section-label">WHAT THE TEAM DISCUSSED</p>
+          <h2>Six ideas worth carrying forward</h2>
+          <p>
+            These cards summarize direct meeting evidence. They do not claim that the full
+            automation or every example has already been implemented.
+          </p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card featured">
+            <div class="card-top">
+              <span class="idea-number">01</span>
+              <span class="evidence-pill">Direct evidence</span>
+            </div>
+            <div class="idea-icon">KB</div>
+            <h3>Search a shared "What's Worked" library</h3>
+            <p>
+              Point GitHub Copilot CLI at the team's accumulated techniques, memory setups,
+              project patterns, and best practices before starting a new problem.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Reuse proven approaches instead of rediscovering them.</span></div>
+          </article>
+
+          <article class="idea-card">
+            <div class="card-top">
+              <span class="idea-number">02</span>
+              <span class="evidence-pill">Direct evidence</span>
+            </div>
+            <div class="idea-icon blue">BI</div>
+            <h3>Query Kusto and Power BI in natural language</h3>
+            <p>
+              Ask for case distributions, representative counts, P50 or P90 values, and other
+              operational metrics without first knowing the correct KQL, tables, or reports.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Shorten the path from a business question to usable evidence.</span></div>
+          </article>
+
+          <article class="idea-card">
+            <div class="card-top">
+              <span class="idea-number">03</span>
+              <span class="evidence-pill">Kos proposal</span>
+            </div>
+            <div class="idea-icon orange">QL</div>
+            <h3>Create an AI PM "quest list"</h3>
+            <p>
+              Maintain a growing catalog of capabilities every AI PM can learn, such as querying
+              data through CLI, creating AI-assisted videos, and documenting reusable workflows.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Make skill development visible, practical, and cumulative.</span></div>
+          </article>
+
+          <article class="idea-card">
+            <div class="card-top">
+              <span class="idea-number">04</span>
+              <span class="evidence-pill">Kos proposal</span>
+            </div>
+            <div class="idea-icon green">5M</div>
+            <h3>Use a five-minute meeting contribution</h3>
+            <p>
+              Let one person demonstrate a useful technique during the regular team meeting, then
+              capture it while the context, examples, and questions are still fresh.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Attach documentation to existing team behavior.</span></div>
+          </article>
+
+          <article class="idea-card">
+            <div class="card-top">
+              <span class="idea-number">05</span>
+              <span class="evidence-pill">Agreed direction</span>
+            </div>
+            <div class="idea-icon pink">GH</div>
+            <h3>Move reusable work into team GitHub spaces</h3>
+            <p>
+              Store reusable code and project assets in shared team repositories rather than
+              relying on personal repositories and one-off access grants.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Improve continuity, access, and reuse across projects.</span></div>
+          </article>
+
+          <article class="idea-card">
+            <div class="card-top">
+              <span class="idea-number">06</span>
+              <span class="evidence-pill">Demonstrated example</span>
+            </div>
+            <div class="idea-icon violet">RP</div>
+            <h3>Turn fast prototypes into reusable playbooks</h3>
+            <p>
+              The Room Pulse example showed how quickly an idea can become a working prototype.
+              The next value comes from sharing the complete process, not only the final demo.
+            </p>
+            <div class="value-line"><b>Why it matters</b><span>Make the method portable, not just the artifact impressive.</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="loop-section" id="loop">
+        <div class="loop-copy">
+          <p class="section-label">THE INFERRED OPERATING MODEL</p>
+          <h2>A self-reinforcing team learning loop</h2>
+          <p>
+            This model was not stated as one formal architecture, but it is strongly supported by
+            the discussion: CLI helps the team contribute knowledge, and that shared knowledge
+            makes CLI more useful for the next person and project.
+          </p>
+          <div class="caution">
+            <strong>Important constraint</strong>
+            <span>
+              Allison noted that permission changes and extraction reliability can break fully
+              automatic workflows. The loop needs explicit failure handling and source checks.
+            </span>
+          </div>
+        </div>
+
+        <div class="loop-visual" aria-label="Team learning loop">
+          <article><span>01</span><b>Discover</b><p>A team member finds a useful CLI workflow.</p></article>
+          <i>+</i>
+          <article><span>02</span><b>Share</b><p>The technique is demonstrated in a team meeting.</p></article>
+          <i>+</i>
+          <article><span>03</span><b>Capture</b><p>Evidence becomes a concise, source-linked how-to.</p></article>
+          <i>+</i>
+          <article><span>04</span><b>Reuse</b><p>CLI recommends the learning for a future problem.</p></article>
+        </div>
+      </section>
+
+      <section class="next-section" id="next">
+        <div>
+          <p class="section-label">NEXT PRACTICAL EXPERIMENT</p>
+          <h2>Start with one meeting, one idea, one reusable page.</h2>
+        </div>
+        <ol>
+          <li><span>1</span><p><b>Select</b> one demonstrated CLI workflow with enough supporting detail.</p></li>
+          <li><span>2</span><p><b>Draft</b> a source-linked how-to with prerequisites, steps, and limitations.</p></li>
+          <li><span>3</span><p><b>Publish</b> it in the shared knowledge area and record a stable identifier.</p></li>
+          <li><span>4</span><p><b>Test</b> whether another team member can find and reuse it through CLI.</p></li>
+        </ol>
+      </section>
+
+      <section class="source-section" id="source">
+        <div>
+          <p class="section-label">SOURCE AND TRUST</p>
+          <h2>Grounded in the Kos Team meeting transcript</h2>
+          <p>
+            Meeting: <b>Kos Team meeting (biweekly)</b>, held October 5, 2026 and organized by
+            Kos Srivastava. Content is summarized rather than quoted at length. The learning-loop
+            architecture is explicitly marked as an inference.
+          </p>
+        </div>
+        <a
+          href="https://teams.microsoft.com/l/meeting/details?eventId=AAMkADczYjllNzU5LWJkYTEtNDg5Yy04MTJlLTY1YTAzYWFjMzI1MAFRAAgI3yJzmWTAAEYAAAAAno0wUQIjMkaph9HBBjz3EgcA4mTKwT3tC0CGwN34NdVXEAAAAAABDQAA4mTKwT3tC0CGwN34NdVXEAAHPNOFAwAAEA%3d%3d&amp;EntityRepresentationId=58036f6d-d718-48c4-ba44-ec711e37accf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open meeting details <span>arrow</span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>CLI Field Notes</span>
+      <p>Source-backed team learning, prepared from authorized Microsoft 365 meeting content.</p>
+    </footer>
+  </body>
+</html>
